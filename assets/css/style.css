@@ -1,0 +1,22 @@
+#masthead{
+	background-color: #c89374;
+}
+
+#rules{
+	background-color: #fbe6cb;
+}
+
+#score{
+	background-color: #4afdfa;
+	padding: 5em 5em 5em 5em;
+}
+
+#greenScore{
+	background-color: #5bd880;
+	padding: 5em 5em 5em 5em;
+}
+
+.crystals {
+	height: 7em;
+	border: 2em;
+}
