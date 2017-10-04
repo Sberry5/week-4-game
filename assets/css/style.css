@@ -1,4 +1,6 @@
-#masthead{
+/*#masthead{
+	display: center;
+	color: #ffffff;
 	background-color: #c89374;
 }
 
@@ -16,7 +18,12 @@
 	padding: 5em 5em 5em 5em;
 }
 
+.user{
+	color: #ffffff;
+	background-color: #2ba296;
+}
+
 .crystals {
 	height: 7em;
 	border: 2em;
-}
+}*/
