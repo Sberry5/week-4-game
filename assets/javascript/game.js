@@ -1,9 +1,9 @@
-//--------------------This Works---------------------
+//--------------------Crystal Game---------------------
 $(document).ready(function(){
 
 //Variable to store the games random number
 var computerScore = computerNumber();
-console.log(computerScore);
+//console.log(computerScore);
 
 var redScore = createnumber();
 console.log(redScore);
@@ -38,27 +38,25 @@ var losses = 0;
 //Function to initialize game
 
 
-//Function to place games random number in div
+//Code place games random number in div
 $("#gameNumber").text(computerScore);
 
-//$("#usernumber").text(greenScore);
+//$("#usernumber").text(userScore);
 
 //When crystal is click add number to usernumber div
 $("#red").on("click", function() {
-		userScore += redScore;
-		});	
-	});
+		userScore += redScore;	
+		$("#usernumber").text(userScore);
+	});	
+});
 
-	// if (userScore === computerScore){
-	// wins++;
-	// }
+// $("#red").on("click", function() {
+// 		(userScore += redScore).toString();	
+// 	});	
 
-	// else if (userScore >= computerScore){
-	// losses++;
-	// }
-	// });
+// });
 
-//if ()
+
 
 //Populate number of wins
 //if (userScore === computerScore){
@@ -66,14 +64,14 @@ $("#red").on("click", function() {
 //}
 
 //Populate number of losses
-//else (userScore >= computerScore){
+//else if (userScore >= computerScore){
 //	losses++;
 //}
 
 
 //Reset function
 //	function reset(){
-//		if ()
+//		usernumber = 0
 //	}
 
 
