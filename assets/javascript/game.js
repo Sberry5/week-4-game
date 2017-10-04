@@ -17,7 +17,7 @@ console.log(yellowScore);
 var greenScore = createnumber();
 console.log(greenScore);
 
-var userScore = 0;
+var userScore;
 
 var wins = 0;
 
@@ -28,13 +28,11 @@ var losses = 0;
 //Function to create a random number for each crystal
 	function createnumber () {
 		return Math.floor(Math.random() * 12) + 1;
-
 	}
 
 //Function to create a random number for the computer score
 	function computerNumber () {
 		return Math.floor(Math.random() * 120) + 19;
-
 	}
 
 //Function to initialize game
@@ -43,23 +41,24 @@ var losses = 0;
 //Function to place games random number in div
 $("#gameNumber").text(computerScore);
 
-$("#usernumber").text();
+//$("#usernumber").text(greenScore);
 
-//When crystal is click add number to userScores div
+//When crystal is click add number to usernumber div
 $("#red").on("click", function() {
-	userScore += redScore;
-	
-	if (userScore === computerScore){
-	wins++;
-	}
+		userScore += redScore;
+		});	
+	});
 
-	else if (userScore >= computerScore){
-	losses++;
-	}
-});
+	// if (userScore === computerScore){
+	// wins++;
+	// }
+
+	// else if (userScore >= computerScore){
+	// losses++;
+	// }
+	// });
 
 //if ()
-
 
 //Populate number of wins
 //if (userScore === computerScore){
