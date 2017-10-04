@@ -43,28 +43,41 @@ var losses = 0;
 //Function to place games random number in div
 $("#gameNumber").text(computerScore);
 
+$("#usernumber").text();
+
 //When crystal is click add number to userScores div
-$("#red,#green,#blue,#yellow").on("click", function() {
-	var userScore = (redScore + blueScore + yellowScore + greenScore);
-	userScore += 
+$("#red").on("click", function() {
+	userScore += redScore;
+	
+	if (userScore === computerScore){
+	wins++;
+	}
+
+	else if (userScore >= computerScore){
+	losses++;
+	}
 });
 
+//if ()
+
+
+//Populate number of wins
 //if (userScore === computerScore){
 //	wins++;
 //}
 
-//if (userScore >= computerScore){
+//Populate number of losses
+//else (userScore >= computerScore){
 //	losses++;
 //}
 
 
+//Reset function
+//	function reset(){
+//		if ()
+//	}
 
 
 
-//Console.log to check if clicking on image works
-//console.log("yay")
-
-//Populate number of losses
 
 
-//Populate number of wins
