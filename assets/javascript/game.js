@@ -33,9 +33,6 @@ var wins = 0;
 var losses = 0;
 
 
-
-
-
 //Function to create a random number for each crystal
 	function createnumber () {
 		return Math.floor(Math.random() * 12) + 1;
@@ -73,20 +70,22 @@ $("#yellow").on("click", function() {
 	function score () {
 
 //Populate number of wins
-		if (userScore === gameScore){
-		wins++;
+		if (userScore == gameScore){
+		wins ++;
 		$("#winsNum").text(wins);
 		}
 //Populate number of losses
 		else if (userScore >= gameScore){
-		losses++;
+		losses ++;
 		$("#lossesNum").text(losses);
+		reset();
 		}
 };
 
 //Reset function
 	function reset(){
-		usernumber = 0
+		userScore = 0
+
 	}
 
 //Reset function

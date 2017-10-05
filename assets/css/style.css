@@ -1,14 +1,19 @@
+.container{
+	background-color: 
+}
+
 /*#masthead{
 	display: center;
 	color: #ffffff;
 	background-color: #c89374;
-}
+}*/
 
 #rules{
-	background-color: #fbe6cb;
+	color: #Fff;
+	background-color: #1179e7;
 }
 
-#score{
+/*#score{
 	background-color: #4afdfa;
 	padding: 5em 5em 5em 5em;
 }
@@ -27,5 +32,5 @@
 	height: 7em;
 	border: 2em;
 	border-color: #0e0e0e;
-	padding: 2em;
+	padding: 1em;
 }
