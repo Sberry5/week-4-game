@@ -1,21 +1,14 @@
 //--------------------Crystal Game---------------------
+$(document).ready(function(){
 
-//When/how to use document.ready?
-//$(document).ready(function(){
-
-
-//Start Game
-//$(document).ready(function(startGame){
-//	(startGame)
 //Variable to store the games random number
 var gameScore = computerNumber();
-//console.log(computerScore);
+//console.log(gameScore);
 
 //Code place games random number in div
 $("#gameNumber").text(gameScore);
-//});
 
-
+//Variables for crystal values
 var redScore = createnumber();
 console.log(redScore);
 
@@ -72,7 +65,7 @@ $("#yellow").on("click", function() {
 	});	
 
 //Score Function
-	function score () {
+	function score(){
 
 //Populate number of wins
 		if (userScore === gameScore){
@@ -88,29 +81,37 @@ $("#yellow").on("click", function() {
 		alert("You lost!");
 		reset();
 		}
-};
+	};
 
-(score);
 
 //Reset function
 	function reset(){
+		var redScore = createnumber();
+		var greenScore = createnumber();
+		var blueScore = createnumber();
+		var yellowScore = createnumber();
 		userScore = 0;
-		computerNumber();
-
+		var gameScore = computerNumber();
+		$("#gameNumber").text(gameScore);
 	}
 
-
+});
 
 //--------------------Questions--------------------
-//When/how to use document.ready?
-//$(document).ready(function(){
+		// var redScore;
+		// var blueScore;
+		// var yellowScore;
+		// var greenScore;
 
 //Why does the following console.log different numbers for
 //additions, but adds the same number for every button to
 //the page?
-// $(".crystals").on("click", function() {
+// $(".crystals").on("click", function(event) {
 // 		userScore += redScore;	
 // 		$("#usernumber").text(userScore);
+// 		console.log(event.target);
+// //if id matches blue increment by blues score
+// 		if ()
 // 	});
 
 
