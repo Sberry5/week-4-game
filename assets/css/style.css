@@ -1,5 +1,6 @@
-.container{
-	background-color: 
+body{
+	background-color: #aaaaaa;
+	font-family: 'Courgette', cursive;
 }
 
 /*#masthead{
@@ -9,16 +10,17 @@
 }*/
 
 #rules{
-	color: #Fff;
-	background-color: #1179e7;
+	color: #e1dede;
+	background-color: #00a0aa;
+	border: 0.5em;
 }
 
-/*#score{
-	background-color: #4afdfa;
+#score{
+	background-color: #afe1c8;
 	padding: 5em 5em 5em 5em;
 }
 
-#greenScore{
+/*#greenScore{
 	background-color: #5bd880;
 	padding: 5em 5em 5em 5em;
 }
@@ -32,5 +34,5 @@
 	height: 7em;
 	border: 2em;
 	border-color: #0e0e0e;
-	padding: 1em;
+	padding: 0.5em;
 }
