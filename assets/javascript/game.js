@@ -2,25 +2,19 @@
 $(document).ready(function(){
 
 //Variable to store the games random number
-var gameScore = computerNumber();
+// var gameScore = computerNumber();
 //console.log(gameScore);
 
 //Code place games random number in div
 $("#gameNumber").text(gameScore);
 
-//Variables for crystal values
-var redScore = createnumber();
-console.log(redScore);
+var redScore;
+var blueScore;
+var yellowScore;
+var greenScore;
+var gameScore;
 
-var blueScore = createnumber();
-console.log(blueScore);
-
-var yellowScore = createnumber();
-console.log(yellowScore);
-
-var greenScore = createnumber();
-console.log(greenScore);
-
+reset();
 var userScore = 0;
 
 var wins = 0;
@@ -38,8 +32,7 @@ var losses = 0;
 	}
 
 //When crystal is clicked add number to usernumber div.
-//I realize a loop would be better, or calling all crystals
-//at a time. Couldn't figure it out.
+//Will try to setup with one function
 $("#red").on("click", function() {
 		userScore += redScore;	
 		$("#usernumber").text(userScore);
@@ -86,26 +79,23 @@ $("#yellow").on("click", function() {
 
 //Reset function
 	function reset(){
-		var redScore = createnumber();
-		var greenScore = createnumber();
-		var blueScore = createnumber();
-		var yellowScore = createnumber();
+		redScore = createnumber();
+		console.log(redScore);
+		greenScore = createnumber();
+		console.log(greenScore);
+		blueScore = createnumber();
+		console.log(blueScore);
+		yellowScore = createnumber();
+		console.log(yellowScore);
 		userScore = 0;
-		var gameScore = computerNumber();
+		gameScore = computerNumber();
 		$("#gameNumber").text(gameScore);
 	}
 
 });
 
-//--------------------Questions--------------------
-		// var redScore;
-		// var blueScore;
-		// var yellowScore;
-		// var greenScore;
+//--------------------To figure out--------------------
 
-//Why does the following console.log different numbers for
-//additions, but adds the same number for every button to
-//the page?
 // $(".crystals").on("click", function(event) {
 // 		userScore += redScore;	
 // 		$("#usernumber").text(userScore);
